@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import {Container} from 'reactstrap'
 
 const Footer = ({ siteTitle }) => (
-  <div
+  <Container
     style={{
-      background: `yellow`,
+      background: `white`,
       padding: `0`,
       position: `absolute`,
       bottom: `0`,
-      width: `100%`
     }}
   >
     <div
@@ -24,7 +24,7 @@ const Footer = ({ siteTitle }) => (
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </div>
     </div>
-  </div>
+  </Container>
 )
 
 Footer.propTypes = {

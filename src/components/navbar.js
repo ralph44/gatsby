@@ -1,49 +1,40 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import {
-  Nav,
-  NavItem,
-  NavLink } from 'reactstrap';
-import { Link } from 'gatsby'
+import React from 'react';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand,  Nav, NavItem, NavLink } from 'reactstrap';
 
-const Navbar1 = ({ siteTitle }) => (
-  <div   
-  style={{
-    background: `red`,
-    padding: `1.45rem 1.0875rem`,
-    marginBottom: `1.45rem`,
-    marginTop: `0`,
-  }}>
-  <Nav pills>
-    <NavItem>
-      <NavLink href="/page-2/" active>
-        <Link to="/page-2/"  style={{
-            color: `white`,
-            textDecoration: `none`,
-        }}>
-          Link to Page
-        </Link>
-      </NavLink>
-    </NavItem>
-    <NavItem>
-      <NavLink href="#">Link</NavLink>
-    </NavItem>
-    <NavItem>
-      <NavLink href="#">Another Link</NavLink>
-    </NavItem>
-    <NavItem>
-      <NavLink disabled href="#">Disabled Link</NavLink>
-    </NavItem>
-  </Nav>
-</div>
-)
+export default class navbar extends React.Component {
+  constructor(props) {
+    super(props);
 
-Navbar1.propTypes = {
-  siteTitle: PropTypes.string,
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.state = {
+      collapsed: true,
+      "title": "Lennard"
+    };
+  }
+
+  toggleNavbar() {
+    this.setState({
+      collapsed: !this.state.collapsed
+    });
+  }
+  render() {
+    return (
+      <div className="clearfix">
+        <Navbar color="faded" light className="cleafix">
+        <NavbarBrand href="/">{this.props.title}</NavbarBrand>
+          <NavbarToggler onClick={this.toggleNavbar} className="" />
+          <Collapse isOpen={!this.state.collapsed} navbar>
+            <Nav navbar>
+              <NavItem>
+                <NavLink href="/page-2/">Projects</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/ralph44">GitHub</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
-
-Navbar1.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Navbar1

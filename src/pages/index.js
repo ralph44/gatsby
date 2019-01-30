@@ -4,16 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Lel from '../components/lel';;
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi Lennard</h1>
-    <p>Willkommen auf deiner Gatsby Seite</p>
-    <p>asdaasdsdasdsad</p>
-    <p></p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-    </div>
+    <SEO title="Home" keywords={[`gatsby`, `blog`, `machine learning`, `lennard gerdes`, `lennard`]} />
+    <Lel />
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
