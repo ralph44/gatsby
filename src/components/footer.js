@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import {Container} from 'reactstrap'
+import { Container } from 'reactstrap'
 
 const Footer = ({ siteTitle }) => (
   <Container className="text-center"
@@ -17,11 +17,11 @@ const Footer = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-        <div>
-          © {new Date().getFullYear()}, Built with
+      <div>
+        © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </div>
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </div>
     </div>
   </Container>
 )
