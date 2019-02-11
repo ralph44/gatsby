@@ -3,11 +3,10 @@ import React from 'react'
 import {Container} from 'reactstrap'
 
 const Footer = ({ siteTitle }) => (
-  <Container
+  <Container className="text-center"
     style={{
       background: `white`,
       padding: `0`,
-      position: `absolute`,
       bottom: `0`,
     }}
   >

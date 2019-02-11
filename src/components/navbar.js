@@ -26,7 +26,7 @@ export default class navbar extends React.Component {
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink href="/page-2/">Projects</NavLink>
+                <NavLink href="/page-2/">Lebenslauf</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/ralph44">GitHub</NavLink>

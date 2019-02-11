@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
           {children}
         
         </div>
-        <Footer />
+        <Footer className="text-center"/>
         </Container>
       </>
     )}
