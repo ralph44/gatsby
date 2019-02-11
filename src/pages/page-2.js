@@ -7,7 +7,6 @@ import { Progress } from 'reactstrap';
 var divStyle = {
   background: 'grey',
   opacity: '0.8',
-  borderRadius: '20px',
   padding: '50px'
 }
 var abstand1 = {
