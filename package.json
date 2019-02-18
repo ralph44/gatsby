@@ -32,6 +32,7 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
+    "@types/reactstrap": "^7.1.3",
     "prettier": "^1.15.2"
   },
   "repository": {
